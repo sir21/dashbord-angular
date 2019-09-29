@@ -1,0 +1,27 @@
+<h1>Highlight pharagraph</h1>
+
+<h4>Pick a highlight color</h4>
+<div>
+    <input type="radio" name="colors" (click)="color='lightgreen'">Green
+    <input type="radio" name="colors" (click)="color='yellow'">Yellow
+    <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p [appHighlight]="color">This line will highlight </p>
+
+<p [appHighlight]="color" defaultColor="brown">
+    Testing highlight directive
+</p>
+
+<h1>Change color of pharagraph</h1>
+
+<h4>Pick a color</h4>
+<div>
+    <input type="radio" name="colors" (click)="color='red'">Red
+    <input type="radio" name="colors" (click)="color='purple'">Purple
+    <input type="radio" name="colors" (click)="color='orange'">Orange
+</div>
+<p [appTextColor]="color">Color of this line will change with mouse hover </p>
+
+<p [appTextColor]="color" defaultColor="blue">
+    Testing change color directive
+</p>
